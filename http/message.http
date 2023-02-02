@@ -1,0 +1,18 @@
+### send message
+POST http://localhost:8080/api/v1/sendMessage
+Accept: application/json
+Content-Type: application/json
+
+{
+  "topic": "myTopic",
+  "message": "Hello World!!!"
+}
+
+### send message without necessary content in body
+POST http://localhost:8080/api/v1/sendMessage
+Accept: application/json
+Content-Type: application/json
+
+{
+  "message": "Hello World!!!"
+}
